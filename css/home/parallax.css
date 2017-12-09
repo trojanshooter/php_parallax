@@ -1,0 +1,1490 @@
+html {
+    box-sizing: border-box
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    margin: 0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+progress {
+    vertical-align: baseline
+}
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+[hidden],
+template {
+    display: none
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+a:active,
+a:hover {
+    outline-width: 0
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+dfn {
+    font-style: italic
+}
+mark {
+    background: #ff0;
+    color: #000
+}
+small {
+    font-size: 80%
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+sub {
+    bottom: -0.25em
+}
+sup {
+    top: -0.5em
+}
+figure {
+    margin: 1em 40px
+}
+img {
+    border-style: none
+}
+svg:not(:root) {
+    overflow: hidden
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    margin: 0
+}
+optgroup {
+    font-weight: bold
+}
+button,
+input {
+    overflow: visible
+}
+button,
+select {
+    text-transform: none
+}
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+textarea {
+    overflow: auto
+}
+[type=checkbox],
+[type=radio] {
+    padding: 0
+}
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+/* End extract */
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+html {
+    overflow-x: hidden
+}
+h1 {
+    font-size: 36px
+}
+h2 {
+    font-size: 30px
+}
+h3 {
+    font-size: 24px
+}
+h4 {
+    font-size: 20px
+}
+h5 {
+    font-size: 18px
+}
+h6 {
+    font-size: 16px
+}
+.ts-serif {
+    font-family: serif
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+.ts-menu-color {
+  color: #777;
+}
+.ts-wide {
+    letter-spacing: 4px
+}
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+.ts-hr-small {
+  width: 10%; 
+  border-top: 1px rgb(0,0,0) solid; 
+  margin: 20px auto;
+}
+.ts-image {
+    max-width: 100%;
+    height: auto
+}
+img {
+    margin-bottom: -5px
+}
+a {
+    color: inherit
+}
+.ts-table,
+.ts-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table
+}
+.ts-table-all {
+    border: 1px solid #ccc
+}
+.ts-bordered tr,
+.ts-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+.ts-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+.ts-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+.ts-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+.ts-hoverable tbody tr:hover,
+.ts-ul.ts-hoverable li:hover {
+    background-color: #ccc
+}
+.ts-centered tr th,
+.ts-centered tr td {
+    text-align: center
+}
+.ts-table td,
+.ts-table th,
+.ts-table-all td,
+.ts-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+.ts-table th:first-child,
+.ts-table td:first-child,
+.ts-table-all th:first-child,
+.ts-table-all td:first-child {
+    padding-left: 16px
+}
+.ts-link {
+  text-decoration: none;
+}
+.ts-btn,
+.ts-button {
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+.ts-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.ts-btn,
+.ts-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.ts-disabled,
+.ts-btn:disabled,
+.ts-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+.ts-disabled *,
+:disabled * {
+    pointer-events: none
+}
+.ts-btn.ts-disabled:hover,
+.ts-btn:disabled:hover {
+    box-shadow: none
+}
+.ts-badge,
+.ts-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center
+}
+.ts-badge {
+    border-radius: 50%
+}
+.ts-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+.ts-ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd
+}
+.ts-ul li:last-child {
+    border-bottom: none
+}
+.ts-tooltip,
+.ts-display-container {
+    position: relative
+}
+.ts-tooltip .ts-text {
+    display: none
+}
+.ts-tooltip:hover .ts-text {
+    display: inline-block
+}
+.ts-ripple:active {
+    opacity: 0.5
+}
+.ts-ripple {
+    transition: opacity 0s
+}
+.ts-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+.ts-select {
+    padding: 9px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+.ts-dropdown-click,
+.ts-dropdown-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+.ts-dropdown-hover:hover .ts-dropdown-content {
+    display: block;
+    z-index: 1
+}
+.ts-dropdown-hover:first-child,
+.ts-dropdown-click:hover {
+    background-color: #ccc;
+    color: #000
+}
+.ts-dropdown-hover:hover > .ts-button:first-child,
+.ts-dropdown-click:hover > .ts-button:first-child {
+    background-color: #ccc;
+    color: #000
+}
+.ts-dropdown-content {
+    cursor: auto;
+    color: #000;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin: 0;
+    padding: 0
+}
+.ts-check,
+.ts-radio {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 6px
+}
+.ts-sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto
+}
+.ts-bar-block .ts-dropdown-hover,
+.ts-bar-block .ts-dropdown-click {
+    width: 100%
+}
+.ts-bar-block .ts-dropdown-hover .ts-dropdown-content,
+.ts-bar-block .ts-dropdown-click .ts-dropdown-content {
+    min-width: 100%
+}
+.ts-bar-block .ts-dropdown-hover .ts-button,
+.ts-bar-block .ts-dropdown-click .ts-button {
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px
+}
+.ts-main,
+#main {
+    transition: margin-left .4s
+}
+.ts-modal {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4)
+}
+.ts-modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 600px
+}
+.ts-bar {
+    width: 100%;
+    overflow: hidden
+}
+.ts-center .ts-bar {
+    display: inline-block;
+    width: auto
+}
+.ts-bar .ts-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block
+}
+.ts-bar .ts-dropdown-hover,
+.ts-bar .ts-dropdown-click {
+    position: static;
+    float: left
+}
+.ts-bar .ts-button {
+    white-space: normal
+}
+.ts-bar-block .ts-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none
+}
+.ts-bar-block.ts-center .ts-bar-item {
+    text-align: center
+}
+.ts-block {
+    display: block;
+    width: 100%
+}
+.ts-responsive {
+    display: block;
+    overflow-x: auto
+}
+.ts-container:after,
+.ts-container:before,
+.ts-panel:after,
+.ts-panel:before,
+.ts-row:after,
+.ts-row:before,
+.ts-row-padding:after,
+.ts-row-padding:before,
+.ts-cell-row:before,
+.ts-cell-row:after,
+.ts-clear:after,
+.ts-clear:before,
+.ts-bar:before,
+.ts-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.ts-col,
+.ts-half,
+.ts-third,
+.ts-twothird,
+.ts-threequarter,
+.ts-quarter {
+    float: left;
+    width: 100%
+}
+.ts-col.s1 {
+    width: 8.33333%
+}
+.ts-col.s2 {
+    width: 16.66666%
+}
+.ts-col.s3 {
+    width: 24.99999%
+}
+.ts-col.s4 {
+    width: 33.33333%
+}
+.ts-col.s5 {
+    width: 41.66666%
+}
+.ts-col.s6 {
+    width: 49.99999%
+}
+.ts-col.s7 {
+    width: 58.33333%
+}
+.ts-col.s8 {
+    width: 66.66666%
+}
+.ts-col.s9 {
+    width: 74.99999%
+}
+.ts-col.s10 {
+    width: 83.33333%
+}
+.ts-col.s11 {
+    width: 91.66666%
+}
+.ts-col.s12 {
+    width: 99.99999%
+}
+@media (min-width: 601px) {
+    .ts-col.m1 {
+        width: 8.33333%
+    }
+    .ts-col.m2 {
+        width: 16.66666%
+    }
+    .ts-col.m3,
+    .ts-quarter {
+        width: 24.99999%
+    }
+    .ts-col.m4,
+    .ts-third {
+        width: 33.33333%
+    }
+    .ts-col.m5 {
+        width: 41.66666%
+    }
+    .ts-col.m6,
+    .ts-half {
+        width: 49.99999%
+    }
+    .ts-col.m7 {
+        width: 58.33333%
+    }
+    .ts-col.m8,
+    .ts-twothird {
+        width: 66.66666%
+    }
+    .ts-col.m9,
+    .ts-threequarter {
+        width: 74.99999%
+    }
+    .ts-col.m10 {
+        width: 83.33333%
+    }
+    .ts-col.m11 {
+        width: 91.66666%
+    }
+    .ts-col.m12 {
+        width: 99.99999%
+    }
+}
+@media (min-width: 993px) {
+    .ts-col.l1 {
+        width: 8.33333%
+    }
+    .ts-col.l2 {
+        width: 16.66666%
+    }
+    .ts-col.l3 {
+        width: 24.99999%
+    }
+    .ts-col.l4 {
+        width: 33.33333%
+    }
+    .ts-col.l5 {
+        width: 41.66666%
+    }
+    .ts-col.l6 {
+        width: 49.99999%
+    }
+    .ts-col.l7 {
+        width: 58.33333%
+    }
+    .ts-col.l8 {
+        width: 66.66666%
+    }
+    .ts-col.l9 {
+        width: 74.99999%
+    }
+    .ts-col.l10 {
+        width: 83.33333%
+    }
+    .ts-col.l11 {
+        width: 91.66666%
+    }
+    .ts-col.l12 {
+        width: 99.99999%
+    }
+}
+.ts-content {
+    max-width: 980px;
+    margin: auto
+}
+.ts-rest {
+    overflow: hidden
+}
+.ts-cell-row {
+    display: table;
+    width: 100%
+}
+.ts-cell {
+    display: table-cell
+}
+.ts-cell-top {
+    vertical-align: top
+}
+.ts-cell-middle {
+    vertical-align: middle
+}
+.ts-cell-bottom {
+    vertical-align: bottom
+}
+.ts-hide {
+    display: none!important
+}
+.ts-show-block,
+.ts-show {
+    display: block!important
+}
+.ts-show-inline-block {
+    display: inline-block!important
+}
+@media (max-width: 600px) {
+    .ts-modal-content {
+        margin: 0 10px;
+        width: auto!important
+    }
+    .ts-modal {
+        padding-top: 30px
+    }
+    .ts-dropdown-hover.ts-mobile .ts-dropdown-content,
+    .ts-dropdown-click.ts-mobile .ts-dropdown-content {
+        position: relative
+    }
+    .ts-hide-small {
+        display: none!important
+    }
+    .ts-mobile {
+        display: block;
+        width: 100%!important
+    }
+    .ts-bar-item.ts-mobile,
+    .ts-dropdown-hover.ts-mobile,
+    .ts-dropdown-click.ts-mobile {
+        text-align: center
+    }
+    .ts-dropdown-hover.ts-mobile,
+    .ts-dropdown-hover.ts-mobile .ts-btn,
+    .ts-dropdown-hover.ts-mobile .ts-button,
+    .ts-dropdown-click.ts-mobile,
+    .ts-dropdown-click.ts-mobile .ts-btn,
+    .ts-dropdown-click.ts-mobile .ts-button {
+        width: 100%
+    }
+}
+@media (max-width: 768px) {
+    .ts-modal-content {
+        width: 500px
+    }
+    .ts-modal {
+        padding-top: 50px
+    }
+}
+@media (min-width: 993px) {
+    .ts-modal-content {
+        width: 900px
+    }
+    .ts-hide-large {
+        display: none!important
+    }
+    .ts-sidebar.ts-collapse {
+        display: block!important
+    }
+}
+@media (max-width: 992px) and (min-width: 601px) {
+    .ts-hide-medium {
+        display: none!important
+    }
+}
+@media (max-width: 992px) {
+    .ts-sidebar.ts-collapse {
+        display: none
+    }
+    .ts-main {
+        margin-left: 0!important;
+        margin-right: 0!important
+    }
+}
+.ts-top,
+.ts-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+.ts-top {
+    top: 0
+}
+.ts-bottom {
+    bottom: 0
+}
+.ts-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+.ts-display-topleft {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+.ts-display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+.ts-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+.ts-display-bottomright {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+.ts-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.ts-display-logo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.ts-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+.ts-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+.ts-display-topmiddle {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+.ts-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+.ts-display-container:hover .ts-display-hover {
+    display: block
+}
+.ts-display-container:hover span.ts-display-hover {
+    display: inline-block
+}
+.ts-display-hover {
+    display: none
+}
+.ts-display-position {
+    position: absolute
+}
+.ts-circle {
+    border-radius: 50%
+}
+.ts-round-small {
+    border-radius: 2px
+}
+.ts-round,
+.ts-round-medium {
+    border-radius: 4px
+}
+.ts-round-large {
+    border-radius: 8px
+}
+.ts-round-xlarge {
+    border-radius: 16px
+}
+.ts-round-xxlarge {
+    border-radius: 32px
+}
+.ts-row-padding,
+.ts-row-padding>.ts-half,
+.ts-row-padding>.ts-third,
+.ts-row-padding>.ts-twothird,
+.ts-row-padding>.ts-threequarter,
+.ts-row-padding>.ts-quarter,
+.ts-row-padding>.ts-col {
+    padding: 0 8px
+}
+.ts-container,
+.ts-panel {
+    padding: 0.01em 16px
+}
+.ts-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+.ts-code,
+.ts-codespan {
+    font-family: Consolas, "courier new";
+    font-size: 16px
+}
+.ts-code {
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word
+}
+.ts-codespan {
+    color: crimson;
+    background-color: #f1f1f1;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 110%
+}
+.ts-card,
+.ts-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+.ts-card-4,
+.ts-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.ts-spin {
+    animation: ts-spin 2s infinite linear
+}
+@keyframes ts-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+.ts-animate-fading {
+    animation: fading 10s infinite
+}
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+.ts-animate-opacity {
+    animation: opac 0.8s
+}
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+.ts-animate-top {
+    position: relative;
+    animation: animatetop 0.4s
+}
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+.ts-animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+.ts-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+.ts-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s
+}
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+.ts-animate-zoom {
+    animation: animatezoom 0.6s
+}
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+.ts-animate-input {
+    transition: width 0.4s ease-in-out
+}
+.ts-animate-input:focus {
+    width: 100%!important
+}
+.ts-opacity,
+.ts-hover-opacity:hover {
+    opacity: 0.60
+}
+.ts-opacity-off,
+.ts-hover-opacity-off:hover {
+    opacity: 1
+}
+.ts-opacity-max {
+    opacity: 0.25
+}
+.ts-opacity-min {
+    opacity: 0.75
+}
+.ts-greyscale-max,
+.ts-grayscale-max,
+.ts-hover-greyscale:hover,
+.ts-hover-grayscale:hover {
+    filter: grayscale(100%)
+}
+.ts-greyscale,
+.ts-grayscale {
+    filter: grayscale(75%)
+}
+.ts-greyscale-min,
+.ts-grayscale-min {
+    filter: grayscale(50%)
+}
+.ts-sepia {
+    filter: sepia(75%)
+}
+.ts-sepia-max,
+.ts-hover-sepia:hover {
+    filter: sepia(100%)
+}
+.ts-sepia-min {
+    filter: sepia(50%)
+}
+.ts-tiny {
+    font-size: 10px!important
+}
+.ts-small {
+    font-size: 12px!important
+}
+.ts-medium {
+    font-size: 15px!important
+}
+.ts-large {
+    font-size: 18px!important
+}
+.ts-xlarge {
+    font-size: 24px!important
+}
+.ts-xxlarge {
+    font-size: 36px!important
+}
+.ts-xxxlarge {
+    font-size: 48px!important
+}
+.ts-jumbo {
+    font-size: 64px!important
+}
+.ts-left-align {
+    text-align: left!important
+}
+.ts-right-align {
+    text-align: right!important
+}
+.ts-justify {
+    text-align: justify!important
+}
+.ts-center {
+    text-align: center!important
+}
+.ts-border-0 {
+    border: 0!important
+}
+.ts-border {
+    border: 1px solid #ccc!important
+}
+.ts-border-top {
+    border-top: 1px solid #ccc!important
+}
+.ts-border-bottom {
+    border-bottom: 1px solid #ccc!important
+}
+.ts-border-left {
+    border-left: 1px solid #ccc!important
+}
+.ts-border-right {
+    border-right: 1px solid #ccc!important
+}
+.ts-topbar {
+    border-top: 6px solid #ccc!important
+}
+.ts-bottombar {
+    border-bottom: 6px solid #ccc!important
+}
+.ts-leftbar {
+    border-left: 6px solid #ccc!important
+}
+.ts-rightbar {
+    border-right: 6px solid #ccc!important
+}
+.ts-section,
+.ts-code {
+    margin-top: 16px!important;
+    margin-bottom: 16px!important
+}
+.ts-margin {
+    margin: 16px!important
+}
+.ts-margin-top {
+    margin-top: 16px!important
+}
+.ts-margin-bottom {
+    margin-bottom: 16px!important
+}
+.ts-margin-left {
+    margin-left: 16px!important
+}
+.ts-margin-right {
+    margin-right: 16px!important
+}
+.ts-padding-small {
+    padding: 4px 8px!important
+}
+.ts-padding {
+    padding: 8px 16px!important
+}
+.ts-padding-large {
+    padding: 12px 24px!important
+}
+.ts-padding-bottom {
+    padding-bottom: 12px;
+}
+.ts-padding-16 {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important
+}
+.ts-padding-24 {
+    padding-top: 24px!important;
+    padding-bottom: 24px!important
+}
+.ts-padding-32 {
+    padding-top: 32px!important;
+    padding-bottom: 32px!important
+}
+.ts-padding-48 {
+    padding-top: 48px!important;
+    padding-bottom: 48px!important
+}
+.ts-padding-64 {
+    padding-top: 64px!important;
+    padding-bottom: 64px!important
+}
+.ts-left {
+    float: left!important
+}
+.ts-right {
+    float: right!important
+}
+.ts-button:hover {
+    color: #000!important;
+    background-color: #ccc!important
+}
+.ts-transparent,
+.ts-hover-none:hover {
+    background-color: transparent!important
+}
+.ts-hover-none:hover {
+    box-shadow: none!important
+}
+/* Colors */
+
+.ts-amber,
+.ts-hover-amber:hover {
+    color: #000!important;
+    background-color: #ffc107!important
+}
+.ts-aqua,
+.ts-hover-aqua:hover {
+    color: #000!important;
+    background-color: #00ffff!important
+}
+.ts-blue,
+.ts-hover-blue:hover {
+    color: #fff!important;
+    background-color: #2196F3!important
+}
+.ts-light-blue,
+.ts-hover-light-blue:hover {
+    color: #000!important;
+    background-color: #87CEEB!important
+}
+.ts-brown,
+.ts-hover-brown:hover {
+    color: #fff!important;
+    background-color: #795548!important
+}
+.ts-cyan,
+.ts-hover-cyan:hover {
+    color: #000!important;
+    background-color: #00bcd4!important
+}
+.ts-blue-grey,
+.ts-hover-blue-grey:hover,
+.ts-blue-gray,
+.ts-hover-blue-gray:hover {
+    color: #fff!important;
+    background-color: #607d8b!important
+}
+.ts-green,
+.ts-hover-green:hover {
+    color: #fff!important;
+    background-color: #4CAF50!important
+}
+.ts-light-green,
+.ts-hover-light-green:hover {
+    color: #000!important;
+    background-color: #8bc34a!important
+}
+.ts-indigo,
+.ts-hover-indigo:hover {
+    color: #fff!important;
+    background-color: #3f51b5!important
+}
+.ts-khaki,
+.ts-hover-khaki:hover {
+    color: #000!important;
+    background-color: #f0e68c!important
+}
+.ts-lime,
+.ts-hover-lime:hover {
+    color: #000!important;
+    background-color: #cddc39!important
+}
+.ts-orange,
+.ts-hover-orange:hover {
+    color: #000!important;
+    background-color: #ff9800!important
+}
+.ts-deep-orange,
+.ts-hover-deep-orange:hover {
+    color: #fff!important;
+    background-color: #ff5722!important
+}
+.ts-pink,
+.ts-hover-pink:hover {
+    color: #fff!important;
+    background-color: #e91e63!important
+}
+.ts-purple,
+.ts-hover-purple:hover {
+    color: #fff!important;
+    background-color: #9c27b0!important
+}
+.ts-deep-purple,
+.ts-hover-deep-purple:hover {
+    color: #fff!important;
+    background-color: #673ab7!important
+}
+.ts-red,
+.ts-hover-red:hover {
+    color: #fff!important;
+    background-color: #f44336!important
+}
+.ts-sand,
+.ts-hover-sand:hover {
+    color: #000!important;
+    background-color: #fdf5e6!important
+}
+.ts-teal,
+.ts-hover-teal:hover {
+    color: #fff!important;
+    background-color: #009688!important
+}
+.ts-yellow,
+.ts-hover-yellow:hover {
+    color: #000!important;
+    background-color: #ffeb3b!important
+}
+.ts-white,
+.ts-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important
+}
+.ts-black,
+.ts-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important
+}
+.ts-grey,
+.ts-hover-grey:hover,
+.ts-gray,
+.ts-hover-gray:hover {
+    color: #000!important;
+    background-color: #bbb!important
+}
+.ts-light-grey,
+.ts-hover-light-grey:hover,
+.ts-light-gray,
+.ts-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important
+}
+.ts-dark-grey,
+.ts-hover-dark-grey:hover,
+.ts-dark-gray,
+.ts-hover-dark-gray:hover {
+    color: #fff!important;
+    background-color: #616161!important
+}
+.ts-pale-red,
+.ts-hover-pale-red:hover {
+    color: #000!important;
+    background-color: #ffdddd!important
+}
+.ts-pale-green,
+.ts-hover-pale-green:hover {
+    color: #000!important;
+    background-color: #ddffdd!important
+}
+.ts-pale-yellow,
+.ts-hover-pale-yellow:hover {
+    color: #000!important;
+    background-color: #ffffcc!important
+}
+.ts-pale-blue,
+.ts-hover-pale-blue:hover {
+    color: #000!important;
+    background-color: #ddffff!important
+}
+.ts-text-red,
+.ts-hover-text-red:hover {
+    color: #f44336!important
+}
+.ts-text-green,
+.ts-hover-text-green:hover {
+    color: #4CAF50!important
+}
+.ts-text-blue,
+.ts-hover-text-blue:hover {
+    color: #2196F3!important
+}
+.ts-text-yellow,
+.ts-hover-text-yellow:hover {
+    color: #ffeb3b!important
+}
+.ts-text-white,
+.ts-hover-text-white:hover {
+    color: #fff!important
+}
+.ts-text-black,
+.ts-hover-text-black:hover {
+    color: #000!important
+}
+.ts-text-grey,
+.ts-hover-text-grey:hover,
+.ts-text-gray,
+.ts-hover-text-gray:hover {
+    color: #757575!important
+}
+.ts-text-amber {
+    color: #ffc107!important
+}
+.ts-text-aqua {
+    color: #00ffff!important
+}
+.ts-text-light-blue {
+    color: #87CEEB!important
+}
+.ts-text-brown {
+    color: #795548!important
+}
+.ts-text-cyan {
+    color: #00bcd4!important
+}
+.ts-text-blue-grey,
+.ts-text-blue-gray {
+    color: #607d8b!important
+}
+.ts-text-light-green {
+    color: #8bc34a!important
+}
+.ts-text-indigo {
+    color: #3f51b5!important
+}
+.ts-text-khaki {
+    color: #b4aa50!important
+}
+.ts-text-lime {
+    color: #cddc39!important
+}
+.ts-text-orange {
+    color: #ff9800!important
+}
+.ts-text-deep-orange {
+    color: #ff5722!important
+}
+.ts-text-pink {
+    color: #e91e63!important
+}
+.ts-text-purple {
+    color: #9c27b0!important
+}
+.ts-text-deep-purple {
+    color: #673ab7!important
+}
+.ts-text-sand {
+    color: #fdf5e6!important
+}
+.ts-text-teal {
+    color: #009688!important
+}
+.ts-text-light-grey,
+.ts-hover-text-light-grey:hover,
+.ts-text-light-gray,
+.ts-hover-text-light-gray:hover {
+    color: #f1f1f1!important
+}
+.ts-text-dark-grey,
+.ts-hover-text-dark-grey:hover,
+.ts-text-dark-gray,
+.ts-hover-text-dark-gray:hover {
+    color: #3a3a3a!important
+}
+.ts-border-red,
+.ts-hover-border-red:hover {
+    border-color: #f44336!important
+}
+.ts-border-green,
+.ts-hover-border-green:hover {
+    border-color: #4CAF50!important
+}
+.ts-border-blue,
+.ts-hover-border-blue:hover {
+    border-color: #2196F3!important
+}
+.ts-border-yellow,
+.ts-hover-border-yellow:hover {
+    border-color: #ffeb3b!important
+}
+.ts-border-white,
+.ts-hover-border-white:hover {
+    border-color: #fff!important
+}
+.ts-border-black,
+.ts-hover-border-black:hover {
+    border-color: #000!important
+}
+.ts-border-grey,
+.ts-hover-border-grey:hover,
+.ts-border-gray,
+.ts-hover-border-gray:hover {
+    border-color: #bbb!important
+}

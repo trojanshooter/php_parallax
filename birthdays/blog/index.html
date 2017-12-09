@@ -1,0 +1,125 @@
+<?php
+
+$q = strtolower($_GET['q'])|strtolower($_GET['Q']);
+$all_content = file_get_contents(__DIR__ . "/content.json");
+$arr_all_content = json_decode($all_content, true);
+if (array_key_exists($q, $arr_all_content)) {
+	$content = $arr_all_content[$q];
+	$title = $content['title'];
+	$location = $content['location'];
+	$text = $content['text'];
+}
+else {
+	header("Location: /birthdays/");
+}
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title><?php print "$title - $location"; ?> | www.trojanshooter.com | San Francisco Birthday Photography by Trojan Shooter Photography - San Francisco Birthday Photography - SF Birthday Photographer</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="Bay Area Birthday Photographer, Birthday Photography, San Francisco, Birthday Photographer, San Francisco Birthday Photography" />
+        <meta property="og:site_name" content="Trojan Shooter Photography &#8212; San Francisco Birthday Photography &#8212; SF and Bay Area Birthday Photographer" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="San Francisco Birthday Photography by Trojan Shooter Photography" />
+        <meta property="og:url" content="http://www.trojanshooter.com/" />
+        <meta property="og:description" content="Trojan Shooter Photographer is based in the heart of California - SF Bay Area. Travels all over the bay and nearby cities." />
+        <meta property="og:image" content="http://www.trojanshooter.com/misc/trojanshooter-wedding-photography-san-francisco-wedding-photographer.jpg" />
+        <meta property="og:image:width" content="1224" />
+        <meta property="og:image:height" content="817" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta name="description" content="Birthday Photographer covering entire San Francisco and the Bay Area. Beautiful wedding photography at reasonable pricing."/>
+        <link rel="canonical" href="http://www.trojanshooter.com/" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="San Francisco Birthday Photography by Trojan Shooter Photography" />
+        <meta property="og:description" content="Trojan Shooter Photography can cover the entire bay area and offer high quality photography at reasonable pricing that you can't beat." />
+        <meta property="og:url" content="http://www.trojanshooter.com/" />
+        <meta property="og:site_name" content="San Francisco Birthday Photography - Bay Area Birthday Photographer" />
+        <meta property="og:image" content="http://www.trojanshooter.com/misc/trojanshooter-wedding-photography-san-francisco-wedding-photographer.jpg" />
+        <meta property="og:image:secure_url" content="http://www.trojanshooter.com/misc/trojanshooter-wedding-photography-san-francisco-wedding-photographer.jpg" />
+        <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"http:\/\/www.trojanshooter.com\/","name":"San Francisco Birthday Photography - Bay Area Birthday Photographer","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.trojanshooter.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+        <script src="/js/jquery/3.2.1/jquery.min.js"></script>
+		<script> 
+		$(function(){
+			$("#site-header").load("../../header.html");
+			$("#site-footer").load("../../footer.html");
+		});
+		</script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+			_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+			_gaq.push(['_setAccount', 'UA-37464843-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script async defer data-pin-hover="true" data-pin-tall="true" data-pin-save="true" src="//assets.pinterest.com/js/pinit.js"></script>
+        <meta name="author" content="TrojanShooter" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+	</head>
+<body class="body-blog">
+<div id="site-header"></div>
+<div class="container">
+	<div class="container-center">
+		<div class="row">
+		<p class="blog-title"><?php print $title; ?></p>
+		<p class="blog-location"><?php print $location; ?></p>
+		</div>
+		<div class="row blog-content"><?php print $text; ?></div>
+
+<?php
+	$path = "$q";
+	$files = array_diff(scandir($path), array('.', '..'));
+	$img_files = array();
+	foreach ($files as $file) {
+		if (stripos($file, '.jpg')) {
+			array_push($img_files, $file);
+		}
+	}
+	$arr_len = count($img_files);
+	$i = 0;
+	while ($i < $arr_len) {
+		$img = $img_files[$i];
+		list($width, $height) = getimagesize("$q/$img");
+		if ($width > $height) {
+			print "<div class=\"row\">";
+				print "<div class=\"img-P\">";
+					print "<img src=\"$q/$img\" />";
+					$i++;
+				print "</div>";
+			print "</div>";
+		}
+		else {
+			print "<div class=\"row\">";
+				print "<div class=\"img-L1\">";
+					print "<img src=\"$q/$img\" />";
+					$i++;
+				print "</div>";
+				$img = $img_files[$i];
+				print "<div class=\"img-L2\">";
+					print "<img src=\"$q/$img\" />";
+					$i++;
+				print "</div>";
+			print "</div>";
+		}
+	}
+?>
+
+	</div>
+</div>
+<div id="site-footer"></div> 
+</body>
+
+</html>

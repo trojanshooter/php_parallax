@@ -1,0 +1,75 @@
+<style>
+/* Footer Style */
+.footer-banner {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+@media only screen and (max-width: 480px) {
+	.footer-banner {
+		font-size: 20px;
+	}
+}
+.footer-banner a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer-banner a:hover {
+	color: #aaa;
+}
+.footer-box{
+	position: fixed;
+	font-family: Arial, sans-serif;
+	color: #777;
+	background-color: #FFFFFF;
+	font-size: 11px;
+	width: 100%;
+	opacity: 0.8;
+	z-index: 50;
+	bottom: 0px;
+	left: 0px;
+}
+.footer-box h2{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: normal;
+	font-family: Arial, sans-serif;
+	color: #A9A9A9;
+}
+@media only screen and (max-width: 480px) {
+	.footer-box h2 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+.footer-box a{
+	text-decoration: none;
+	outline: none;
+	color: #777;
+}
+.footer-box a:hover{
+	text-decoration: underline;
+}
+</style>
+
+<!-- Footer bar -->
+<div class="footer-box">
+    <div class="footer-banner">
+    	<?php print $footer_banner ?>
+    </div>
+	<h2>
+	<a href="/weddings/">Weddings</a> |
+	<a href="/cityhall/">City Hall</a> |
+	<a href="/engagements/">Engagements</a> |
+	<a href="/barmitzvah/">Bar Mitzvah,Quinceanera</a> |
+	<a href="/birthdays/">Birthdays</a> |
+	<a href="/maternity/">Maternity</a> |
+	<a href="/portraits/">Portraits</a>
+	</h2>			
+</div>
+<!--/ Footer bar -->

@@ -1,0 +1,47 @@
+{
+	"aulakhs": {
+		"title": "Family Photoshoot - The Aulakhs",
+		"location": "San Jose, CA",
+		"text": "<p></p>"
+	},
+	"carlos": {
+		"title": "Portraits - Carlos",
+		"location": "Golden Gate Park, San Francisco, CA",
+		"text": "<p></p>"
+	},
+	"headshots": {
+		"title": "Corporate Headshots",
+		"location": "Emeryville, CA",
+		"text": "<p></p>"
+	},
+	"jesse": {
+		"title": "Portraits - Jesse",
+		"location": "Danville, CA",
+		"text": "<p></p>"
+	},
+	"jiminez": {
+		"title": "Family Portraits - The Jeminez",
+		"location": "Golden Gate Park, San Francisco, CA",
+		"text": "<p></p>"
+	},
+	"juanandtatiana": {
+		"title": "Prom Portraits - Juan and Tatiana",
+		"location": "Battery Spencer, Sausalito, CA",
+		"text": "<p></p>"
+	},
+	"rahmans": {
+		"title": "Family Photoshoot - The Rahmans",
+		"location": "Japanese Tea Garden, Golden Gate Park <br> San Francisco, CA",
+		"text": "<p></p>"
+	},
+	"schwartzbergs": {
+		"title": "Family Photoshoot - The Schwartzbergs",
+		"location": "Golden Gate Park, San Francisco, CA",
+		"text": "<p></p>"
+	},
+	"sundarams": {
+		"title": "Family Photoshoot - The Sundarams",
+		"location": "Baker's Beach, San Francisco, CA",
+		"text": "<p></p>"
+	}
+}

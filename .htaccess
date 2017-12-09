@@ -1,0 +1,16 @@
+# Begin cache control #
+ExpiresActive on
+<FilesMatch "\.(png|bmp|ico|gff|jpg|jpeg|gif|gcf)$">
+FileETag MTime Size
+ExpiresDefault "now plus 1440 minutes"
+</FilesMatch>
+
+
+# End cache control #
+AddType application/x-httpd-php .html
+
+
+# Force www redirect #
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^trojanshooter.com [NC]
+RewriteRule ^(.*)$ http://www.trojanshooter.com/$1 [L,R=301,NC]
