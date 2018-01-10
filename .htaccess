@@ -1,6 +1,8 @@
 # Begin cache control #
 ExpiresActive on
-<FilesMatch "\.(png|bmp|ico|gff|jpg|jpeg|gif|gcf)$">
+ExpiresDefault "now plus 1440 minutes"
+ExpiresByType text/html "now plus 1440 minutes"
+<FilesMatch "\.(css|png|bmp|ico|htm|gff|html|js|jpg|jpeg|gif|gcf)$">
 FileETag MTime Size
 ExpiresDefault "now plus 1440 minutes"
 </FilesMatch>
