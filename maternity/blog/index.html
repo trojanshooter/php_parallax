@@ -24,8 +24,8 @@ else {
         <meta name="keywords" content="Bay Area Maternity Photographer, Maternity Photography, San Francisco Maternity Photographer, SF Maternity Photography" />
         <meta property="og:site_name" content="Trojan Shooter Photography &#8212; San Francisco Maternity Photography &#8212; SF and Bay Area Maternity Photographer" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="San Francisco Maternity Photography by Trojan Shooter Photography" />
-        <meta property="og:url" content="http://www.trojanshooter.com/maternity" />
+        <meta property="og:title" content="<?php print $title; print ', '; print $location; ?> &#124; www.trojanshooter.com &#124; San Francisco Maternity Photography by Trojan Shooter Photography" />
+        <meta property="og:url" content="http://www.trojanshooter.com/maternity/blog/?q=<?php print $q;?>" />
         <meta property="og:description" content="Trojan Shooter Photographer is based in the heart of California - SF Bay Area. Travels all over the bay and nearby cities." />
         <meta property="og:image" content="http://www.trojanshooter.com/misc/trojanshooter-san-francisco-city-hall-wedding-photographer.jpg" />
         <meta property="og:image:width" content="1349" />
@@ -33,12 +33,12 @@ else {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
         <meta name="description" content="San Francisco maternity photography at reasonable pricing. Beautiful, elegant and candid photography."/>
-        <link rel="canonical" href="http://www.trojanshooter.com/cityhall" />
+        <link rel="canonical" href="http://www.trojanshooter.com/maternity/blog/?q=<?php print $q;?>" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="San Francisco Maternity Photography by Trojan Shooter Photography" />
+        <meta property="og:title" content="<?php print $title; print ', '; print $location; ?> &#124; www.trojanshooter.com &#124; San Francisco Maternity Photography by Trojan Shooter Photography" />
         <meta property="og:description" content="Trojan Shooter Photography can cover the entire bay area and offer high quality photography at reasonable pricing that you can't beat." />
-        <meta property="og:url" content="http://www.trojanshooter.com/cityhall" />
+        <meta property="og:url" content="http://www.trojanshooter.com/maternity/blog/?q=<?php print $q;?>" />
         <meta property="og:site_name" content="San Francisco Maternity Photography - Bay Area Maternity Photographer" />
         <meta property="og:image" content="http://www.trojanshooter.com/misc/trojanshooter-san-francisco-city-hall-wedding-photographer.jpg" />
         <meta property="og:image:secure_url" content="http://www.trojanshooter.com/misc/trojanshooter-san-francisco-city-hall-wedding-photographer.jpg" />
@@ -51,19 +51,22 @@ else {
 			$("#site-footer").load("../../footer.html");
 		});
 		</script>
-		<script type="text/javascript">
+        <script type="text/javascript">
+    	var host = window.location.hostname;
+	  	if(host != "localhost") {
 			var _gaq = _gaq || [];
-			var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-			_gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-			_gaq.push(['_setAccount', 'UA-37464843-1']);
-			_gaq.push(['_trackPageview']);
+	        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+	        _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+	        _gaq.push(['_setAccount', 'UA-37464843-1']);
+	        _gaq.push(['_trackPageview']);
 
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
+	        (function() {
+	            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	        })();
+	    }
+        </script>
 		<script async defer data-pin-hover="true" data-pin-tall="true" data-pin-save="true" src="//assets.pinterest.com/js/pinit.js"></script>
         <meta name="author" content="TrojanShooter" />
 		<link rel="shortcut icon" href="../favicon.ico"> 
