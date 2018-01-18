@@ -1075,6 +1075,9 @@ a {
 .ts-small {
     font-size: 12px!important
 }
+.ts-small-medium {
+    font-size: 13px!important
+}
 .ts-medium {
     font-size: 15px!important
 }
